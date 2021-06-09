@@ -27,8 +27,8 @@ class Warcaby:
         self.dostepneRuchy = {}
 
         self.mainframe.grid_columnconfigure(7, weight =1)
-        ttk.Button(self.mainframe, text="RESET", command=lambda :self.rozstawienie()).grid(row = 5, column = 9, padx = 15)
-        self.info = Label(self.mainframe, text="Tura gracza 1").grid(row=2, column=9, padx=15)
+        ttk.Button(self.mainframe, text="RESET", command=lambda :self.rozstawienie()).grid(row = 8, column = 5, pady=10)
+        self.info = Label(self.mainframe, text="Tura gracza 1").grid(row=8, column=2, pady=10)
 
         self.stworzPlansze()
 
@@ -247,6 +247,6 @@ class Warcaby:
 
 
 
-#warcaby = Warcaby()
+warcaby = Warcaby()
 
         
