@@ -1,6 +1,6 @@
 
 
-class Pionek:
+class Pionek:                                           #Klasa Pionek przyjmuje przy inicjacji pozycje na ktorej dany pionek się znajduje oraz do kogo on należy. Posiada metodę ruch która zmienia jego położenie
     def __init__(self, pozX, pozY, gracz):
         self.pozX = pozX
         self.pozY = pozY

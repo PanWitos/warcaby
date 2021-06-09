@@ -4,12 +4,12 @@ from warcaby import Warcaby
 
 X,Y = 8, 8
 
-class Test(Warcaby):
+class Test(Warcaby):                            #Klasa testy dziedziczy po klasie Warcaby, przeprowadza grę w wracaby, nie ma interfejsu graficznego. 
     def __init__(self):
         
         self.rozstawienie(1)
 
-    def rozstawienie(self, typ):
+    def rozstawienie(self, typ):                #Modyfikacje pozwalają na stowrzenie odpowiedniego układu pionków na początku gry w celu przeprowadzenia testów i zaprezentowania działania programu.
         print("Nowa gra")
         self.tura = 'C'
         self.wybranyPionek = None
@@ -37,7 +37,7 @@ class Test(Warcaby):
             self.liczbaPionkowBiale = 1
             self.stworzPlansze5()
 
-    def stworzPlansze(self):
+    def stworzPlansze(self):                                                #Tworzenie planszy z odpowiednio ustawionymi pionkami
         for x in range(X):
             self.plansza.append([])
             for y in range(Y):
