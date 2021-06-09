@@ -217,11 +217,11 @@ class Warcaby:
         self.dostepneRuchy = {}                         #Czyścimy dostepne ruchy
         if self.tura == "C":                            #Jeśli turę miał gracz czarny, teraz turę ma gracz biały, i na odwrót. Aktualizowanie informacji.
             self.tura = "B"
-            self.info = Label(self.mainframe, text="Tura gracza 2").grid(row=2, column=9, padx=15)
+            self.info = Label(self.mainframe, text="Tura gracza 2").grid(row=8, column=2, pady=10)
             print("Tura gracza 2")
         else:
             self.tura = "C"
-            self.info = Label(self.mainframe, text="Tura gracza 1").grid(row=2, column=9, padx=15)
+            self.info = Label(self.mainframe, text="Tura gracza 1").grid(row=8, column=2, pady=10)
             print("Tura gracza 1")
 
     def usunPionek(self, pionki):                       #Usuwanie wszystkich zbitych pionków, wstawanie w ich miejsca pustych pól (0), aktualizowanie siatki przycisków
